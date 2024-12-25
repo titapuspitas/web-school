@@ -1,12 +1,12 @@
 <template>
   <div class="header fixed-top">
-    <div class="h-img">
+    <div class="logo">
       <img src="~/assets/img/logo.png" alt="COVER">
     </div>
     <div class="h-text">
       <div class="t-judul">
-        <h2>SMKN 4</h2>
-        <h2>TASIKMALAYA</h2>
+        <h5>SMKN 4</h5>
+        <h5>TASIKMALAYA</h5>
       </div>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
@@ -22,9 +22,9 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Profil</a>
                 <ul class="dropdown-menu">
-                  <li><nuxt-link to="profil/visi" class="dropdown-item">VISI DAN MISI</nuxt-link></li>
-                  <li><nuxt-link to="profil/kepala" class="dropdown-item" >KEPALA SEKOLAH</nuxt-link></li>
-                  <li><a class="dropdown-item" href="#">DENAH</a></li>
+                  <li><nuxt-link to="profil/sejarah" class="dropdown-item">SEJARAH</nuxt-link></li>
+                  <li><nuxt-link to="profil/visi" class="dropdown-item" >VISI DAN MISI</nuxt-link></li>
+                  <li><a class="dropdown-item" href="#">SEJARAH</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -62,32 +62,36 @@
 
 <style scoped>
 .header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 15vh;
-  background-color: #8B0000;
-  color: #fff;
-  padding: 0 10px;
-  box-sizing: border-box;
-  justify-content: space-between;
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1050;
-  padding-top: 15px; 
+  z-index: 1000; /* Tetap di atas elemen lain */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8B0000;
+  color: white;
+  width: 100%; /* Lebar penuh */
+  height: 100px; /* Tinggi navbar */
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
-.h-img {
-  flex-shrink: 0;
-  margin-right: 30px;
-}
 
-.h-img img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem; /* Padding kiri */
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+.logo h5 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .h-text {
@@ -96,11 +100,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 20px;
 }
 
-.t-judul h2 {
+.t-judul h5 {
   margin: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   font-family: Inria Serif;
   text-transform: uppercase;

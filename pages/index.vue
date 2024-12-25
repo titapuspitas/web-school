@@ -1,4 +1,4 @@
 <template>
-          <Cover />
+        <Cover />
 </template>
 
