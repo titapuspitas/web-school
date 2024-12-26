@@ -17,40 +17,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Beranda</a>
+                <nuxt-link to="../" class="nav-link active" aria-current="page" href="#" style="color: white;">Beranda</nuxt-link>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Profil</a>
-                <ul class="dropdown-menu">
-                  <li><nuxt-link to="profil/sejarah" class="dropdown-item">SEJARAH</nuxt-link></li>
-                  <li><nuxt-link to="profil/visi" class="dropdown-item" >VISI DAN MISI</nuxt-link></li>
-                  <li><a class="dropdown-item" href="#">SEJARAH</a></li>
-                </ul>
+              <li class="nav-item">
+                <nuxt-link to="./profil" class="nav-link active" aria-current="page" href="#" style="color: white;">Profil</nuxt-link>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Kompetensi Keahlian</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">PPLG</a></li>
-                  <li><a class="dropdown-item" href="#">TKJ</a></li>
-                  <li><a class="dropdown-item" href="#">DKV</a></li>
-                  <li><a class="dropdown-item" href="#">TBSM</a></li>
-                  <li><a class="dropdown-item" href="#">TOI</a></li>
-                </ul>
+              <li class="nav-item">
+                <nuxt-link to="./ekstra" class="nav-link active" aria-current="page" href="#" style="color: white;">Ekstrakulikuler</nuxt-link>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Ekstrakurikuler</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Data</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">GURU</a></li>
-                  <li><a class="dropdown-item" href="#">SISWA</a></li>
-                </ul>
+              <li class="nav-item">
+                <nuxt-link to="./data" class="nav-link active" aria-current="page" href="#" style="color: white;">Data</nuxt-link>
               </li>
             </ul>
           </div>
