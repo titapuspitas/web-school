@@ -33,43 +33,124 @@
       </p>
     </div>
   </div>
-  <div class="page-wrapper">
-    <div class="news-section">
-      <h1 class="title">Berita</h1>
-      <div class="title-line"></div>
-      
+  <div class="row">
+    <div class="col">
+      <div class="kompetensi-section">
+    <!-- Teks Tengah dengan Background -->
+    <div class="kompetensi-header">
+        <i class="icon bi-mortarboard-fill"></i>
+        <h1>Kompetensi Keahlian</h1>
+    </div>
+</div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+    <!-- Cards Section -->
+      <div class="cards-section">
+    <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="~/assets/img/rpl.png" alt="rpl" />
+          </div>
+          <div class="card-text">
+            <h2>Pengembangan Perangkat Lunak & Gim</h2>
+            <p>Jurusan ini mempelajari cara merancang, mengembangkan, dan memelihara perangkat lunak, termasuk aplikasi berbasis desktop, web, dan mobile. Siswa juga diajarkan teknik pembuatan gim, seperti desain level, animasi, dan pemrograman gim, menggunakan teknologi dan perangkat lunak terkini.</p>
+          </div>
+        </div>
+    <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/tkj.png" alt="jringan" />
+          </div>
+          <div class="card-text">
+            <h2>Teknik Komputer & Jaringan Komputer</h2>
+            <p>Jurusan ini fokus pada penguasaan konsep dan praktik dalam membangun, mengelola, dan mengamankan jaringan komputer. Siswa akan mempelajari teknologi jaringan, administrasi server, troubleshooting, serta konfigurasi perangkat jaringan seperti router dan switch.</p>
+          </div>
+        </div>
+    <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/tbsm.png" alt="otomotif" />
+          </div>
+          <div class="card-text">
+            <h2>Teknik & Bisnis Sepeda Motor</h2>
+            <p>Jurusan ini mempelajari teknik perawatan, perbaikan, dan modifikasi sepeda motor, sekaligus menanamkan keterampilan kewirausahaan. Siswa diajarkan cara membuka dan mengelola bisnis bengkel, termasuk aspek pemasaran dan manajemen.</p>
+          </div>
+          </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/dkv.png" alt="dkv" />
+          </div>
+          <div class="card-text">
+            <h2>Desain Komunikasi Visual</h2>
+            <p>Jurusan ini mengajarkan seni dan teknik dalam menciptakan desain visual yang komunikatif dan menarik. Materi meliputi desain grafis, fotografi, ilustrasi, dan media digital untuk kebutuhan branding, promosi, atau media publikasi.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/img/toi.png" alt="toi" />
+          </div>
+          <div class="card-text">
+            <h2>Teknik Otomotif Industri</h2>
+            <p>Jurusan ini berfokus pada teknologi otomotif yang diterapkan dalam skala industri. Siswa akan belajar tentang sistem mekanik kendaraan modern, produksi komponen otomotif, dan pengelolaan peralatan industri yang berkaitan dengan otomotif.</p>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="row">
+    <div class="col">
+      <div class="berita-section">
+  <div class="berita">
+    <i class="icon bi-newspaper"></i>
+    <h1>BERITA</h1>
+  </div>
+</div>
+  </div>
       <div class="news-grid">
         <div class="news-card">
-          <img src="~/assets/img/honda.jpeg" alt="Honda" class="card-image">
+          <img src="~/assets/img/honda.jpeg" alt="Honda" class="image">
           <div class="card-date">20 MEI 2024</div>
           <div class="card-content">
             <h2>Honda Resmikan Safety Riding Lab di SMKN 4 Tasikmalaya, Ciptakan Bibit Keselamatan di Jawa Barat</h2>
             <p>Safety Riding Lab ini menjadi fasilitas pelatihan keselamatan Honda ke-7 di Seluruh Indonesia. Sekaligus juga menjadi yang ketiga di daerah Jawa Barat hingga saat ini DAN Diharapkan juga jika fasilitas safety riding ini bisa menciptakan bibit-bibit agen pembawa perubahan bagi keselamatan. Dan menyebarkannya pada masyarakat luas.</p>
           </div>
+          <nuxt-link to="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all">
+            <button class="card-button">Selengkapnya</button>
+          </nuxt-link>
         </div>
         <div class="news-card">
-            <img src="~/assets/img/app.jpeg" alt="app" class="card-image">
+            <img src="~/assets/img/app.jpeg" alt="app" class="image">
           <div class="card-date">29 JULI 2024</div>
           <div class="card-content">
             <h2>Aplikasi SIMORING, Solusi Kekinian dari Universitas BSI untuk PKL di SMKN 4 Tasikmalaya</h2>
             <p>“Aplikasi SIMORING dirancang untuk memudahkan proses monitoring kegiatan PKL bagi siswa, guru, dan mitra industri. Dengan aplikasi ini, siswa dapat dengan mudah membuat laporan harian, proyek, dan laporan akhir PKL, sementara guru dan mitra industri dapat melakukan pengawasan dan evaluasi secara lebih terstruktur dan transparan. Kami berharap aplikasi ini dapat membawa perubahan positif dalam pelaksanaan PKL di SMKN 4 Kota Tasikmalaya,”</p>
           </div>
+          <nuxt-link to="https://news.bsi.ac.id/2024/07/31/aplikasi-simoring-solusi-kekinian-dari-universitas-bsi-untuk-pkl-di-smkn-4-tasikmalaya/">
+            <button class="card-button">Selengkapnya</button>
+          </nuxt-link>
           </div>
           <div class="news-card">
-            <img src="~/assets/img/inovasi.webp" alt="ivovasi" class="card-image">
+            <img src="~/assets/img/inovasi.webp" alt="ivovasi" class="image">
             <div class="card-date">27 FEBRUARI S.D 2 MARET</div>
             <div class="card-content">
               <h2>Siswa SMKN 4 Tasikmalaya Adu Inovasi dan Kreativitas di Expo Creanova</h2>
               <p>Kepala SMKN 4 Tasikmalaya Kurniawan SPd MPd mengatakan bahwa Expo Creanova dalam rangka memperingati ulang tahun SMKN 4 Tasikmalaya.</p>
             </div>
+            <nuxt-link to="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all">
+            <button class="card-button">Selengkapnya</button>
+          </nuxt-link>
         </div>
           </div>
       </div>
-      <NuxtLink to="https://www.google.com/search?sca_esv=217f92c2b6785191&q=smkn+4+tasikmalaya&tbm=nws&source=lnms&fbs=AEQNm0DRkam6RZP7GtztEOLmt4oJ8Clo4GiuZfu1v-ShpjWeHJx3g_9TgwV1SRaOPx9HL-nRv0CDzo6aKZc4312-ne0dLdN25o9KlRKeWDSNwJ8L22GaZDR4k73q1umvoTrkNs-f5NM_Y6lelKXnPglqZdpzruyQAd1FEpPfGrWRxAH4fN9eklarNC855Om4c-VjzPkuiuiEPVZ0gsOzcQFiW5jl9ml3Bw&sa=X&ved=2ahUKEwi0icn2m8KKAxXDTmwGHUoNOUsQ0pQJegQIDhAB&biw=1920&bih=945&dpr=1">
+      <NuxtLink to="https://radartasik.id/2023/03/02/siswa-smkn-4-tasikmalaya-adu-inovasi-dan-kreativitas-di-expo-creanova/">
         <button class="view-more">Lihat Berita Lainnya</button>
       </NuxtLink>
     </div>
-  </div>
 </template>
 
 
@@ -78,7 +159,6 @@
 .hal-utama {
   margin-top: 100px;
 }
-
 .welcome-section {
   position: relative;
   text-align: center;
@@ -120,38 +200,52 @@
 .welcome-title {
   margin: 0 0 1rem; /* Margin atas dan bawah */
   font-size: 2rem;
-  color:  #8B0000;; /* Warna utama */
+  color:  #8B0000; /* Warna utama */
 }
 .welcome-paragraph {
   font-size: 1rem;
   line-height: 2.0;
   color: #333; /* Warna teks */
 }
-.page-wrapper {
-  min-height: 100vh;
-  padding: 40px 20px;
+.icon {
+  font-size: 3rem;  /* Ukuran ikon */
+  color: #fff;  /* Warna ikon */
+  margin-right: 15px;  /* Memberi jarak antara ikon dan teks */
 }
 
-.news-section {
-  max-width: 1200px;
-  margin: 0 auto;
+.berita {
+  background-color: #8B0000;  /* Warna latar belakang */
+  color: white;  /* Warna teks */
+  text-align: center;  /* Menjaga agar teks berada di tengah */
+  padding: 1rem 0;  /* Jarak dalam */
+  margin-bottom: 2rem;  /* Jarak bawah */
+  margin-top: 20px;  /* Jarak atas */
+  display: flex;  /* Menata ikon dan teks dalam satu baris */
+  justify-content: center;  /* Menyusun elemen secara horizontal di tengah */
+  align-items: center;  /* Menjaga agar ikon dan teks sejajar secara vertikal */
 }
 
-.title {
-  color: #8B0000;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 10px;
+.berita h1 {
+  margin: 0;  /* Menghapus margin default pada elemen h1 */
+  font-size: 2.5rem;  /* Ukuran font teks */
+  font-weight: bold;
+}
+.card-button {
+  background-color: white;
+  color:  #8B0000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
 }
 
-.title-line {
-  width: 120px;
-  height: 2px;
-  background-color: #8B0000;
-  margin: 0 auto 40px;
+.card-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
-
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -169,6 +263,11 @@
 .card-image {
   width: 100%;
   height: 200px;
+  object-fit: cover;
+}
+.image {
+  width: 100%;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -217,5 +316,70 @@
 }
 a{
   text-decoration: none;
+}
+.icon {
+  font-size: 3rem;  /* Ukuran ikon */
+  color: #fff;  /* Warna ikon */
+  margin-right: 15px;  /* Memberi jarak antara ikon dan teks */
+}
+
+.kompetensi-header {
+  background-color: #8B0000;  /* Warna latar belakang */
+  color: white;  /* Warna teks */
+  text-align: center;
+  padding: 1rem 0;  /* Jarak dalam */
+  margin-bottom: 2rem;  /* Jarak bawah */
+  display: flex;  /* Menata ikon dan teks dalam satu baris */
+  justify-content: center;  /* Menyusun elemen di tengah */
+  align-items: center;  
+}
+
+.kompetensi-header h1 {
+  margin: 0;  
+  font-size: 2.5rem;  
+  font-weight: bold;
+}
+
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem; 
+  justify-content: center; 
+  padding: 0 1rem; 
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  max-width: 700px; 
+  width: 100%; 
+}
+
+.card-image img {
+  width: 150px; 
+  height: auto;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card-text h2 {
+  margin: 0 0 0.5rem;
+  color:  #8B0000; 
+  font-size: 1.5rem;
+}
+
+.card-text p {
+  margin: 0;
+  color: #555; 
+  line-height: 1.5;
 }
 </style>
