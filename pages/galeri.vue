@@ -1,3 +1,3 @@
 <template>
-    <h1>haii</h1>
+    <h1>hai</h1>
 </template>

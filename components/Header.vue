@@ -26,7 +26,7 @@
                 <nuxt-link to="./ekstra" class="nav-link active" aria-current="page" href="#" style="color: white;">Ekstrakulikuler</nuxt-link>
               </li>
               <li class="nav-item">
-                <nuxt-link to="./data" class="nav-link active" aria-current="page" href="#" style="color: white;">Data</nuxt-link>
+                <nuxt-link to="./galeri" class="nav-link active" aria-current="page" href="#" style="color: white;">Galeri</nuxt-link>
               </li>
             </ul>
           </div>
