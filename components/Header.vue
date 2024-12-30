@@ -101,7 +101,7 @@ body {
   z-index: 1100; 
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
   background-color: #8B0000; 
   border: none; 
   z-index: 1100; 
@@ -118,7 +118,7 @@ body {
 
 .dropdown-item:active {
   background-color: #A52A2A; 
-}
+} */
 
 .carousel-inner img {
   width: 100%;

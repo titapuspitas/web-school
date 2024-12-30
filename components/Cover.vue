@@ -4,7 +4,7 @@
       <div class="col">
         <!-- Welcome Section -->
         <div class="welcome-section">
-          <img src="/assets/img/brosur.jpeg" alt="Image" class="welcome-image" />
+          <img src="/assets/img/guru.jpg" alt="Image" class="welcome-image" />
         </div>
       </div>
     </div>
@@ -61,17 +61,15 @@
         
         <div class="stat-card">
           <div class="stat-label">Jumlah Guru</div>
-          <div class="stat-value">60</div>
+          <div class="stat-value">82</div>
         </div>
       </div>
-
       <!-- Right Column -->
       <div class="stats-column">
         <div class="stat-card">
           <div class="stat-label">Jumlah Rombel</div>
           <div class="stat-value">34</div>
         </div>
-        
         <div class="stat-card">
           <div class="stat-label">Jumlah Tenaga Administrasi</div>
           <div class="stat-value">10</div>
@@ -178,23 +176,20 @@
           </div>
         </div>
       </div>
-      <div class="news-grid">
-        <div class="news-card">
-          <img src="~/assets/img/honda.jpeg" alt="Honda" class="image">
-          <div class="card-date">20 MEI 2024</div>
+     <div class="news-grid">
+        <div v-for="(app,i) in berita" :key="i" class="news-card">
+          <img :src="app.foto" alt="app" class="image">
+          <div class="card-date">{{ app.tgl }}</div>
           <div class="card-content">
-            <h2>Honda Resmikan Safety Riding Lab di SMKN 4 Tasikmalaya, Ciptakan Bibit Keselamatan di Jawa Barat</h2>
-            <p>Safety Riding Lab ini menjadi fasilitas pelatihan keselamatan Honda ke-7 di Seluruh Indonesia. Sekaligus
-              juga menjadi yang ketiga di daerah Jawa Barat hingga saat ini DAN Diharapkan juga jika fasilitas safety
-              riding ini bisa menciptakan bibit-bibit agen pembawa perubahan bagi keselamatan. Dan menyebarkannya pada
-              masyarakat luas.</p>
+            <h2>{{app.judul }}</h2>
+            <p>{{app.deskripsi}}</p>
           </div>
           <nuxt-link
-            to="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all">
+            to="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all" target="_blank">
             <button class="card-button">Selengkapnya</button>
           </nuxt-link>
         </div>
-        <div class="news-card">
+        <!-- <div class="news-card">
           <img src="~/assets/img/app.jpeg" alt="app" class="image">
           <div class="card-date">29 JULI 2024</div>
           <div class="card-content">
@@ -206,7 +201,7 @@
               Kota Tasikmalaya,”</p>
           </div>
           <nuxt-link
-            to="https://news.bsi.ac.id/2024/07/31/aplikasi-simoring-solusi-kekinian-dari-universitas-bsi-untuk-pkl-di-smkn-4-tasikmalaya/">
+            to="https://news.bsi.ac.id/2024/07/31/aplikasi-simoring-solusi-kekinian-dari-universitas-bsi-untuk-pkl-di-smkn-4-tasikmalaya/" target="__blank">
             <button class="card-button">Selengkapnya</button>
           </nuxt-link>
         </div>
@@ -219,20 +214,33 @@
               ulang tahun SMKN 4 Tasikmalaya.</p>
           </div>
           <nuxt-link
-            to="https://radartasik.id/2023/03/02/siswa-smkn-4-tasikmalaya-adu-inovasi-dan-kreativitas-di-expo-creanova/">
+            to="https://radartasik.id/2023/03/02/siswa-smkn-4-tasikmalaya-adu-inovasi-dan-kreativitas-di-expo-creanova/" target="__blank">
             <button class="card-button">Selengkapnya</button>
           </nuxt-link>
-        </div>
+        </div> -->
       </div>
-    </div>
+    </div> 
     <NuxtLink
-      to="https://www.google.com/search?sca_esv=c8f39132a967e6fa&q=smkn+4+tasikmalaya&tbm=nws&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J5m2RNdZ7TqBBDB_EAGU4N1KmHmEYoxnGi716uJtDrT4BejLFemESLcx0_AxYgHtu8eacEg_PQPBKp4WA_phPl-jYzFD0o48MpfGkty9-I6wrDPuX3Nge7TBIQMA-QMTzM83rds08HKway8tTUMlCatoUAtHMlWN5gA_8qus_baBSuN6VQ&sa=X&ved=2ahUKEwjjv9CwvMmKAxXN3TgGHY9XFIwQ0pQJegQIERAB&biw=1920&bih=945&dpr=1&safe=active&ssui=on">
+      to="https://www.google.com/search?sca_esv=c8f39132a967e6fa&q=smkn+4+tasikmalaya&tbm=nws&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J5m2RNdZ7TqBBDB_EAGU4N1KmHmEYoxnGi716uJtDrT4BejLFemESLcx0_AxYgHtu8eacEg_PQPBKp4WA_phPl-jYzFD0o48MpfGkty9-I6wrDPuX3Nge7TBIQMA-QMTzM83rds08HKway8tTUMlCatoUAtHMlWN5gA_8qus_baBSuN6VQ&sa=X&ved=2ahUKEwjjv9CwvMmKAxXN3TgGHY9XFIwQ0pQJegQIERAB&biw=1920&bih=945&dpr=1&safe=active&ssui=on" target="__blank">
       <button class="view-more">Lihat Berita Lainnya</button>
     </NuxtLink>
   </div>
   </div>
+ 
 </template>
 
+<script setup>
+const supabase = useSupabaseClient()
+const berita = ref([])
+
+const getBerita = async () => {
+  const { data, error } = await supabase.from('berita').select(`*`)    
+  if (data) berita.value = data;
+}
+onMounted(() => {
+  getBerita()
+})
+</script>
 
 <style scoped>
 .hal-utama {
@@ -292,7 +300,7 @@
   margin: 0 0 1rem;
   /* Margin atas dan bawah */
   font-size: 2rem;
-  color: #8B0000;
+  color: #333;
   /* Warna utama */
 }
 
@@ -343,7 +351,7 @@
 
 .card-button {
   background-color: white;
-  color: #8B0000;
+  color: #333;
   border: none;
   border-radius: 6px;
   padding: 8px 24px;
@@ -385,7 +393,7 @@
 }
 
 .card-date {
-  background: #8B0000;
+  background:#8B0000;
   color: white;
   padding: 4px 12px;
   font-size: 14px;
@@ -499,7 +507,7 @@ a {
 
 .card-text h2 {
   margin: 0 0 0.5rem;
-  color: #8B0000;
+  color: #333;
   font-size: 1.5rem;
 }
 

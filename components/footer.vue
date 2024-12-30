@@ -1,93 +1,127 @@
 <template>
-    <div class="row">
-      <div class="col">
-        <section class="section" id="identitas">
-      <h2 class="section-title">Identitas Sekolah</h2>
-      <div class="identitas-content">
-        <div class="identitas-item">
-          <h3>Nama Sekolah</h3>
-          <p>SMK Negeri 4 Tasikmalaya</p>
-        </div>
-        <div class="identitas-item">
-          <h3>NPSN</h3>
-          <p>20276063</p>
-        </div>
-        <div class="identitas-item">
-          <h3>Nomor Statistik Sekolah</h3>
-          <p>401327810004</p>
-        </div>
-        <div class="identitas-item">
-          <h3>Alamat</h3>
-          <p>Jalan Depok RT 02 RW 05</p>
-        </div>
-        <div class="identitas-item">
-          <h3>Telepon</h3>
-          <p>+(62)265312059</p>
-        </div>
-        <div class="identitas-item">
-          <h3>Email</h3>
-          <p>info@smkn4tsm.sch.id</p>
-        </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Hubungi Kami Section -->
+      <div class="footer-section">
+        <h3 class="footer-title">Hubungi Kami</h3>
+        <p class="contact-info">SMKN 4 Tasikmalaya</p>
+        <p class="contact-info">Jl Depok Kel. Sukamantri Kec. Purbahitu</p>
+        <p class="contact-info">Kota Tasikmalaya 46196</p>
+        <p class="contact-info">
+          <i class="bi bi-telephone">
+          <span class="phone">+6235831299</span></i>
+        </p>
+        <p class="contact-info">
+          <span class="email">info@smkn4-tsm.sch.id</span>
+        </p>
       </div>
-    </section>
-  </div>
-</div>
-<div class="footer">
-  <p>Copyright <i class="fa-regular fa-copyright"></i> SMKN 4 Tasikmalaya 2024</p>
-</div>
 
-  </template>
-  
-  <style scoped>
-  .footer {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    background-color: #8B0000; /* Warna merah */
-    color: white; /* Warna teks putih */
-    text-align: center; /* Teks di tengah */
-    padding: 0.5rem 0; /* Padding lebih kecil */
-    position: relative; /* Footer berada setelah konten */
-    width: 100%; /* Memastikan footer selebar layar */
-    font-size: 0.9rem; /* Ukuran font lebih kecil */
-    margin-top: 20px; /* Jarak dengan konten atas */
-  }
+      <!-- Media Sosial Section -->
+      <div class="footer-section">
+        <h3 class="footer-title">Media Sosial</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/4smkn" class="social-link"><i class="bi bi-facebook"></i> Facebook</a></li>
+          <li><a href="https://youtube.com/@smkn4tasikmalayamediaoffic704?si=IIyWqqo9S_IZV1Q5" class="social-link"><i class="bi bi-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.instagram.com/smkn4tsmofficial?igsh=YWRkMTNkaW9jNXE4" class="social-link"><i class="bi bi-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@smkn4tasikmalaya?_t=8sVa1Ghp5Eu&_r=1" class="social-link"><i class="bi bi-tiktok"></i> TikTok</a></li>
+        </ul>
+      </div>
 
-  .section {
-  margin: 2rem 0;
-  padding: 1rem;
+      <!-- Link Eksternal Section -->
+      <div class="footer-section">
+        <h3 class="footer-title">Link Eksternal</h3>
+        <ul class="external-links">
+          <li><a href="https://www.kemdikbud.go.id/" class="external-link" style="color: #333;">Kemdikbud</a></li>
+          <li><a href="https://psmk.kemdikbud.go.id/" class="external-link" style="color: #333;">PSMK</a></li>
+          <li><a href="https://disdik.jabarprov.go.id/" class="external-link" style="color: #333;">Disdik Jabar</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <p>© SMKN 4 Tasikmalaya. All right reserved</p>
+      <p>Designed and Engineered by Operator</p>
+    </div>
+  </footer>
+</template>
+
+<style scoped>
+a{
+  text-decoration: none;
+}
+.footer {
   background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: #8B0000;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.section-content {
-  font-size: 1rem;
   color: #333;
-  line-height: 1.6;
-}
-
-.identitas-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.identitas-item {
-  background-color: #fff;
-  padding: 1rem;
+  padding: 40px 0 20px;
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.identitas-item h3 {
-  color: #8B0000;
-  font-size: 1.1rem;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-  </style>
+
+.footer-section {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.social-links,
+.external-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.social-link i {
+  margin-right: 8px; /* Menambahkan ruang antara ikon dan teks */
+}
+
+.social-link:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+</style>
