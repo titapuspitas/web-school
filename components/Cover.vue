@@ -419,6 +419,7 @@ onMounted(() => {
   line-height: 1.6;
 }
 
+
 .view-more {
   display: block;
   margin: 0 auto;

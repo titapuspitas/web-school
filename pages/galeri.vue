@@ -5,67 +5,98 @@
         <h1 class="judul">Galeri</h1>
         <p>SMK Negeri 4 Tasikmalaya</p>
       </div>
-      
-      <div class="image-gallery">
-        <div class="container">
-          <img src="/assets/img/upcr.jpeg" alt="Avatar" class="image">
-          <div class="overlay">Upacara Bendera</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/beasiswa.jpeg" alt="Avatar" class="image">
-          <div class="overlay">bea siswa</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/filmkarya.jpeg" alt="Avatar" class="image">
-          <div class="overlay">juara dalam bidang Film dan Karya</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/job.jpg" alt="Avatar" class="image">
-          <div class="overlay">Job Fair</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/binsik.jpeg" alt="Avatar" class="image">
-          <div class="overlay">Binsik</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/kebangkitan.jpg" alt="Avatar" class="image">
-          <div class="overlay">EXPO</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/t.jpeg" alt="Avatar" class="image">
-          <div class="overlay">Pengajian Jumat</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/inovasi.webp" alt="Avatar" class="image">
-          <div class="overlay">EXPO</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/pd.webp" alt="Avatar" class="image">
-          <div class="overlay">Kumpulan Perisai Diri</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/sf.jpg" alt="Avatar" class="image">
-          <div class="overlay">Safety Riding</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/siswa.jpg" alt="Avatar" class="image">
-          <div class="overlay">Penyuluhan</div>
-        </div>
-        <div class="container">
-          <img src="/assets/img/job.jpg" alt="Avatar" class="image">
-          <div class="overlay">bea siswa</div>
+      <h1 class="gallery-title">
+      MPLS 2024
+      <div class="title-underline"></div>
+  </h1>
+  <div class="image-gallery">
+        <div v-for="(mpls,i) in mpls" :key="i" class="container">
+        <img :src="mpls.foto" alt="mpls" class="image">
         </div>
       </div>
     </div>
+    <h1 class="gallery-title">
+        Perkemahan P5 2024
+        <div class="title-underline"></div>
+    </h1>
+      <div class="image-gallery">
+        <div v-for="(pramuka ,i) in pramuka " :key="i" class="container">
+        <img :src="pramuka .foto" alt="pramuka " class="image">
+        </div>
+    </div>
+    <h1 class="gallery-title">
+        Upacara Memperingari 17 Agustus 
+        <div class="title-underline"></div>
+    </h1>
+      <div class="image-gallery">
+        <div v-for="(galeri ,i) in galeri " :key="i" class="container">
+        <img :src="galeri .foto" alt="galeri " class="image">
+        </div>
+    </div>
+    <h1 class="gallery-title">
+        Job Fair 2024 
+        <div class="title-underline"></div>
+    </h1>
+      <div class="image-gallery">
+        <div v-for="(jobfair ,i) in jobfair " :key="i" class="container">
+        <img :src="jobfair .foto" alt="jobfair " class="image">
+        </div>
+    </div>
+
   </template>
   
+  <script setup>
+  const supabase = useSupabaseClient()
+  const mpls = ref([])
+  const pramuka = ref([])
+  const galeri = ref([])
+  const jobfair = ref([])
+  
+  const getMpls = async () => {
+    const { data, error } = await supabase.from('mpls').select(`*`)    
+    if (data) mpls.value = data;
+  }
+  const getPramuka = async () => {
+    const { data, error } = await supabase.from('pramuka ').select(`*`)    
+    if (data) pramuka .value = data;
+  }
+  const getGaleri = async () => {
+    const { data, error } = await supabase.from('galeri').select(`*`)    
+    if (data) galeri .value = data;
+  }
+  const getJobFair = async () => {
+    const { data, error } = await supabase.from('jobfair').select(`*`)    
+    if (data) jobfair .value = data;
+  }
+  onMounted(() => {
+    getMpls()
+    getPramuka()
+    getGaleri()
+    getJobFair()
+  })
+  </script>
   <style scoped>
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  
+.gallery-title {
+    font-size: 25px;
+    color: #333;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.title-underline {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px auto 0;
+}
   .profile-page {
     margin-top: 100px;
   }
@@ -97,9 +128,9 @@
     display: flex;
     flex-wrap: wrap; /* Agar gambar bisa masuk ke baris berikutnya */
     justify-content: space-around; /* Memberi jarak antar gambar */
-    gap: 1rem; /* Jarak antar gambar */
-    margin-top: 3rem;
-    padding: 10px;
+    gap: 5px; /* Jarak antar gambar */
+    margin-top: 1rem;
+    padding: 25px;
     object-fit: contain;
   }
   
@@ -108,7 +139,7 @@
     width: 100%;
     max-width: 300px;
     /* Membatasi lebar maksimum */
-    height: 300px; /* Menetapkan tinggi yang tetap untuk kotak gambar */
+    height: 400px; /* Menetapkan tinggi yang tetap untuk kotak gambar */
     overflow: hidden; /* Menyembunyikan gambar yang melebihi kotak */
   }
   
@@ -119,22 +150,6 @@
     object-fit: cover; /* Menyesuaikan gambar untuk mengisi seluruh kotak, mempertahankan proporsi */
   }
   
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: 0.5s ease;
-    opacity: 0;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
   
   </style>
   
